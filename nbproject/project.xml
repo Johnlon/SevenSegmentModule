@@ -54,6 +54,10 @@
                     <name>XC8_PIC16F1827</name>
                     <type>2</type>
                 </confElem>
+                <confElem>
+                    <name>XC8_PIC16F18446</name>
+                    <type>2</type>
+                </confElem>
             </confList>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>
