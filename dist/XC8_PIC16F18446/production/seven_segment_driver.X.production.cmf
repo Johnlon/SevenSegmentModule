@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+$C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8007 8007 5 2
@@ -177,11 +177,11 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
-7FD cinit CODE >7482:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
-7FD cinit CODE >7485:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
-7FD cinit CODE >7491:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
-7FD cinit CODE >7493:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
-7FE cinit CODE >7494:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
+7FD cinit CODE >7482:C:\Users\johnl\AppData\Local\Temp\xcAsd8o.s
+7FD cinit CODE >7485:C:\Users\johnl\AppData\Local\Temp\xcAsd8o.s
+7FD cinit CODE >7491:C:\Users\johnl\AppData\Local\Temp\xcAsd8o.s
+7FD cinit CODE >7493:C:\Users\johnl\AppData\Local\Temp\xcAsd8o.s
+7FE cinit CODE >7494:C:\Users\johnl\AppData\Local\Temp\xcAsd8o.s
 619 text5 CODE >57:C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
 619 text5 CODE >60:C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
 61C text5 CODE >62:C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
@@ -338,19 +338,19 @@ _PMD7 79D 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.produ
 _WPUA 1F39 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 _WPUB 1F44 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 _WPUC 1F4F 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+___sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 _main CB0 0 CODE 0 maintext dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 btemp 7E 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
-start 4 0 CODE 0 init C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+start 4 0 CODE 0 init C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 __size_of_main 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __end_of_PMD_Initialize C58 0 CODE 0 text3 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
@@ -363,8 +363,8 @@ __Lmaintext 0 0 ABS 0 maintext -
 _INLVLA 1F3C 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 _INLVLB 1F47 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 _INLVLC 1F52 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
-___stacklo 2010 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+___stackhi 27EF 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
+___stacklo 2010 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 _PIN_MANAGER_Initialize C6C 0 CODE 0 text4 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 start_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 _ODCONA 1F3A 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
@@ -373,7 +373,7 @@ _ODCONC 1F50 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.pr
 _OSCFRQ 893 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __end_of_SYSTEM_Initialize C6C 0 CODE 0 text2 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+___int_sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -604,7 +604,7 @@ __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _SYSTEM_Initialize C58 0 CODE 0 text2 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\johnl\AppData\Local\Temp\xcAsd8o.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __end_of_PIN_MANAGER_Initialize CB0 0 CODE 0 text4 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
