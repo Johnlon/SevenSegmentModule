@@ -418,8 +418,8 @@ text2 C58 C6B CODE C58 0
 text3 C44 C57 CODE C44 0
 text5 C32 C43 CODE C32 0
 %locals
-dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-C:\Users\johnl\AppData\Local\Temp\xcAs620.s
+dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
 7482 7FD 0 CODE 0
 7485 7FD 0 CODE 0
 7491 7FD 0 CODE 0

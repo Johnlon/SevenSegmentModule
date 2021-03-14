@@ -3,12 +3,12 @@ Microchip MPLAB XC8 Compiler V2.32
 Linker command line:
 
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
-  -h+dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.sym \
-  --cmf=dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.cmf -z \
-  -Q16F18446 -oC:\Users\johnl\AppData\Local\Temp\xcAs620.4 \
+  -h+dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.sym \
+  --cmf=dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.cmf \
+  -z -Q16F18446 -oC:\Users\johnl\AppData\Local\Temp\xcAs5d0.4 \
   --defsym=__MPLAB_BUILD=1 \
-  -Mdist/XC8_PIC16F18446/debug/seven_segment_driver.X.debug.map -E1 \
-  -ver=XC8 Compiler --acfsm=1493 -ASTACK=02010h-027EFh -pstack=STACK \
+  -Mdist/XC8_PIC16F18446/production/seven_segment_driver.X.production.map \
+  -E1 -ver=XC8 Compiler --acfsm=1493 -ASTACK=02010h-027EFh -pstack=STACK \
   -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 \
   -ACONST=00h-0FFhx64 -AENTRY=00h-0FFhx64 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh \
@@ -47,8 +47,8 @@ Linker command line:
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\johnl\AppData\Local\Temp\xcAs620.o \
-  dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o 
+  -pfunctab=ENTRY -k C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o \
+  dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o 
 
 Object code version is 3.11
 
@@ -57,11 +57,11 @@ Machine type is 16F18446
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\johnl\AppData\Local\Temp\xcAs620.o
+C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5        0       4
-dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
                 cinit                               7FD      7FD        3      FFA       0
                 config                             8007     8007        5        0       4
                 text5                               619      619        9      C32       0

@@ -11,11 +11,11 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\johnl\AppData\Local\Temp\xcAs620.o
+$C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8007 8007 5 2
-$dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+$dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 cinit CODE 0 7FD 7FD 3 2
 text1 CODE 0 6EA 6EA 113 2
 text2 CODE 0 62C 62C A 2
@@ -176,12 +176,12 @@ STRING 800-3FFF 2
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
-$dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-7FD cinit CODE >7482:C:\Users\johnl\AppData\Local\Temp\xcAs620.s
-7FD cinit CODE >7485:C:\Users\johnl\AppData\Local\Temp\xcAs620.s
-7FD cinit CODE >7491:C:\Users\johnl\AppData\Local\Temp\xcAs620.s
-7FD cinit CODE >7493:C:\Users\johnl\AppData\Local\Temp\xcAs620.s
-7FE cinit CODE >7494:C:\Users\johnl\AppData\Local\Temp\xcAs620.s
+$dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+7FD cinit CODE >7482:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
+7FD cinit CODE >7485:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
+7FD cinit CODE >7491:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
+7FD cinit CODE >7493:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
+7FE cinit CODE >7494:C:\Users\johnl\AppData\Local\Temp\xcAs5d0.s
 619 text5 CODE >57:C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
 619 text5 CODE >60:C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
 61C text5 CODE >62:C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
@@ -315,65 +315,65 @@ $dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-___latbits 3 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+___latbits 3 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hspace_0 800 0 ABS 0 - -
 __Hspace_1 7C 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10013 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_PMD_Initialize C44 0 CODE 0 text3 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_PMD_Initialize C44 0 CODE 0 text3 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-_LATA 18 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_LATB 19 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_LATC 1A 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD0 796 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD1 797 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD2 798 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD3 799 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD4 79A 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD5 79B 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD6 79C 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PMD7 79D 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_WPUA 1F39 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_WPUB 1F44 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_WPUC 1F4F 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-_main CB0 0 CODE 0 maintext dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-btemp 7E 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-start 4 0 CODE 0 init C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-__size_of_main 0 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_LATA 18 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_LATB 19 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_LATC 1A 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD0 796 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD1 797 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD2 798 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD3 799 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD4 79A 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD5 79B 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD6 79C 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PMD7 79D 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_WPUA 1F39 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_WPUB 1F44 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_WPUC 1F4F 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+_main CB0 0 CODE 0 maintext dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+btemp 7E 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+start 4 0 CODE 0 init C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+__size_of_main 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-__end_of_PMD_Initialize C58 0 CODE 0 text3 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__end_of_PMD_Initialize C58 0 CODE 0 text3 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_ANSELA 1F38 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_ANSELB 1F43 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_ANSELC 1F4E 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_display DD4 0 CODE 0 text1 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_ANSELA 1F38 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_ANSELB 1F43 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_ANSELC 1F4E 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_display DD4 0 CODE 0 text1 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-_INLVLA 1F3C 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_INLVLB 1F47 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_INLVLC 1F52 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-___stackhi 27EF 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-___stacklo 2010 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-_PIN_MANAGER_Initialize C6C 0 CODE 0 text4 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-start_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_ODCONA 1F3A 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_ODCONB 1F45 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_ODCONC 1F50 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_OSCFRQ 893 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__end_of_SYSTEM_Initialize C6C 0 CODE 0 text2 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-___int_sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAs620.o
+_INLVLA 1F3C 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_INLVLB 1F47 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_INLVLC 1F52 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+___stackhi 27EF 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+___stacklo 2010 0 ABS 0 - C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+_PIN_MANAGER_Initialize C6C 0 CODE 0 text4 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+start_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_ODCONA 1F3A 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_ODCONB 1F45 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_ODCONC 1F50 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_OSCFRQ 893 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__end_of_SYSTEM_Initialize C6C 0 CODE 0 text2 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -385,7 +385,7 @@ __Hbank7 0 0 ABS 0 bank7 -
 __Hbank8 0 0 ABS 0 bank8 -
 __Hbank9 0 0 ABS 0 bank9 -
 __Hcinit 1000 0 CODE 0 cinit -
-__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
 __Hsfr12 0 0 ABS 0 sfr12 -
@@ -565,9 +565,9 @@ __Lsfr61 0 0 ABS 0 sfr61 -
 __Lsfr62 0 0 ABS 0 sfr62 -
 __Lsfr63 0 0 ABS 0 sfr63 -
 __Lstack 0 0 STACK 2 stack -
-_PORTAbits C 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PORTBbits D 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_PORTCbits E 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_PORTAbits C 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PORTBbits D 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_PORTCbits E 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 4 0 CODE 0 init -
@@ -602,11 +602,11 @@ __S0 800 0 ABS 0 - -
 __S1 7C 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_SYSTEM_Initialize C58 0 CODE 0 text2 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_SYSTEM_Initialize C58 0 CODE 0 text2 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\johnl\AppData\Local\Temp\xcAs620.o
-__size_of_PMD_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__end_of_PIN_MANAGER_Initialize CB0 0 CODE 0 text4 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\johnl\AppData\Local\Temp\xcAs5d0.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__end_of_PIN_MANAGER_Initialize CB0 0 CODE 0 text4 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -661,17 +661,17 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext CB0 0 CODE 0 maintext dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__pmaintext CB0 0 CODE 0 maintext dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_LATAbits 18 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_LATBbits 19 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_LATCbits 1A 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__size_of_display 0 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_OSCCON1 88D 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_OSCCON3 88F 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_OSCTUNE 892 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_LATAbits 18 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_LATBbits 19 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_LATCbits 1A 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__size_of_display 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_OSCCON1 88D 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_OSCCON3 88F 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_OSCTUNE 892 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -680,49 +680,49 @@ __Lspace_4 0 0 ABS 0 - -
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Lend_init 4 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+end_of_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hintentry 4 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
-main@hiByte 2E 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+main@hiByte 2E 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec -
-display@dig 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__ptext1 DD4 0 CODE 0 text1 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__ptext2 C58 0 CODE 0 text2 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__ptext3 C44 0 CODE 0 text3 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__ptext4 C6C 0 CODE 0 text4 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__ptext5 C32 0 CODE 0 text5 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-main@loByte 2C 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+display@dig 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__ptext1 DD4 0 CODE 0 text1 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__ptext2 C58 0 CODE 0 text2 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__ptext3 C44 0 CODE 0 text3 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__ptext4 C6C 0 CODE 0 text4 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__ptext5 C32 0 CODE 0 text5 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+main@loByte 2C 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_SLRCONA 1F3B 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_SLRCONB 1F46 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_SLRCONC 1F51 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__end_of__initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+_SLRCONA 1F3B 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_SLRCONB 1F46 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_SLRCONC 1F51 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-__end_of_display FFA 0 CODE 0 text1 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__end_of_display FFA 0 CODE 0 text1 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hend_init 8 0 CODE 0 end_init -
-__end_of_main DD4 0 CODE 0 maintext dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_OSCEN 891 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_TRISA 12 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_TRISB 13 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_TRISC 14 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__end_of_main DD4 0 CODE 0 maintext dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_OSCEN 891 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_TRISA 12 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_TRISB 13 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_TRISC 14 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__end_of_OSCILLATOR_Initialize C44 0 CODE 0 text5 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-__initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@a 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@b 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@c 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@d 7A 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@e 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@f 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@g 7B 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-display@v 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
-_OSCILLATOR_Initialize C32 0 CODE 0 text5 dist/XC8_PIC16F18446/debug\seven_segment_driver.X.debug.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__end_of_OSCILLATOR_Initialize C44 0 CODE 0 text5 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+__initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@a 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@b 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@c 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@d 7A 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@e 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@f 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@g 7B 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+display@v 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
+_OSCILLATOR_Initialize C32 0 CODE 0 text5 dist/XC8_PIC16F18446/production\seven_segment_driver.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
