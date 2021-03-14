@@ -1,0 +1,200 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18446 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"46 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\main.c
+[v _display display `(v  1 e 1 0 ]
+"122
+[v _main main `(v  1 e 1 0 ]
+"50 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"57
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"71
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S128 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"462 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18446.h
+[u S135 . 1 `S128 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES135  1 e 1 @12 ]
+[s S172 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"511
+[u S178 . 1 `S172 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES178  1 e 1 @13 ]
+[s S145 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"553
+[u S154 . 1 `S145 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES154  1 e 1 @14 ]
+"598
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"648
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"687
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"749
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+[s S89 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"764
+[u S96 . 1 `S89 1 . 1 0 ]
+[v _LATAbits LATAbits `VES96  1 e 1 @24 ]
+"799
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+[s S74 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"813
+[u S80 . 1 `S74 1 . 1 0 ]
+[v _LATBbits LATBbits `VES80  1 e 1 @25 ]
+"838
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+[s S106 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"855
+[u S115 . 1 `S106 1 . 1 0 ]
+[v _LATCbits LATCbits `VES115  1 e 1 @26 ]
+"19759
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"19804
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"19860
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"19881
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"19926
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"19977
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"20004
+[v _PMD6 PMD6 `VEuc  1 e 1 @1948 ]
+"20037
+[v _PMD7 PMD7 `VEuc  1 e 1 @1949 ]
+"21110
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"21250
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"21347
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"21398
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"21456
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"30650
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"30695
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"30745
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"30790
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"30835
+[v _INLVLA INLVLA `VEuc  1 e 1 @7996 ]
+"31035
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"31074
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"31113
+[v _ODCONB ODCONB `VEuc  1 e 1 @8005 ]
+"31152
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @8006 ]
+"31191
+[v _INLVLB INLVLB `VEuc  1 e 1 @8007 ]
+"31347
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"31409
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"31471
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"31533
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"31595
+[v _INLVLC INLVLC `VEuc  1 e 1 @8018 ]
+"122 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"150
+[v main@hiByte hiByte `i  1 a 2 14 ]
+"143
+[v main@loByte loByte `i  1 a 2 12 ]
+"157
+} 0
+"46
+[v _display display `(v  1 e 1 0 ]
+{
+"56
+[v display@g g `a  1 a 1 11 ]
+[v display@d d `a  1 a 1 10 ]
+[v display@c c `a  1 a 1 9 ]
+[v display@a a `a  1 a 1 8 ]
+[v display@f f `a  1 a 1 7 ]
+[v display@e e `a  1 a 1 6 ]
+[v display@b b `a  1 a 1 5 ]
+"46
+[v display@v v `i  1 p 2 0 ]
+[v display@dig dig `i  1 p 2 2 ]
+"118
+} 0
+"50 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"71
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"89
+} 0
+"55 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"112
+} 0
+"57 C:\Users\johnl\MPLABXProjects\seven_segment_driver.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
