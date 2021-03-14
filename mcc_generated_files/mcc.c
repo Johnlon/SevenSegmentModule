@@ -56,8 +56,8 @@ void SYSTEM_Initialize(void)
 
 void OSCILLATOR_Initialize(void)
 {
-    // NOSC LFINTOSC; NDIV 4; 
-    OSCCON1 = 0x52;
+    // NOSC LFINTOSC; NDIV 1; 
+    OSCCON1 = 0x50;
     // CSWHOLD may proceed; SOSCPWR Low power; 
     OSCCON3 = 0x00;
     // MFOEN disabled; LFOEN disabled; ADOEN disabled; SOSCEN disabled; EXTOEN disabled; HFOEN disabled; 

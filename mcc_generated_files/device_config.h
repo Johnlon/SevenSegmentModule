@@ -47,7 +47,7 @@
 #ifndef DEVICE_CONFIG_H
 #define	DEVICE_CONFIG_H
 
-#define _XTAL_FREQ 7750
+#define _XTAL_FREQ 31000
 
 #endif	/* DEVICE_CONFIG_H */
 /**
