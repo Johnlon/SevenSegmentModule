@@ -15,7 +15,7 @@ The device pinout is shown below. I've labelled the pins as DIN_0-7 for the 8 bi
 Project Structure
 ----
 
-The user code is in _main.c_.
+The user code is in [_main.c_](https://raw.githubusercontent.com/Johnlon/SevenSegmentModule/main/main.c).
 
 This is a straightforward loop that reads the 8 bit data input and then decides which of the seven segment output bits to turn on/off to light the LED's, and also it multiplexes the two digits by applying a low to the DIGIT_L or DIGIT_H pins to select which digit is lit (low to light the digit).
 
