@@ -6,20 +6,24 @@
 
 #include "mcc_generated_files/mcc.h"
 
-void display(int v, int dig) {
-
+void display(int dig) {
+    
+    int value4Bit;
     if (dig == 0) {
-        DIGIT_L_SetLow(); // active
-        DIGIT_H_SetHigh(); // inactive
+        value4Bit = DIN_0_GetValue() +
+            (DIN_1_GetValue() << 1) +
+            (DIN_2_GetValue() << 2) +
+            (DIN_3_GetValue() << 3);
     } else {
-        DIGIT_L_SetHigh(); // inactive
-        DIGIT_H_SetLow(); // active
+        value4Bit = DIN_4_GetValue() +
+            (DIN_5_GetValue() << 1) +
+            (DIN_6_GetValue() << 2) +
+            (DIN_7_GetValue() << 3);
     }
-
     bool a, b, c, d, e, f, g;
     a = b = c = d = e = f = g = false;
 
-    switch (v) {
+    switch (value4Bit) {
         case 0:
             a = b = c = d = e = f = true;
             break;
@@ -70,6 +74,9 @@ void display(int v, int dig) {
             break;
     }
 
+    DIGIT_L_SetHigh(); // inactive
+    DIGIT_H_SetHigh(); // inactive
+   
     if (a) {
         SEG_A_SetHigh();
     } else {
@@ -105,7 +112,12 @@ void display(int v, int dig) {
     } else {
         SEG_G_SetLow();
     }
-
+ 
+    if (dig == 0) {
+        DIGIT_L_SetLow(); // active
+    } else {
+        DIGIT_H_SetLow(); // active
+    }
 }
 
 /*
@@ -132,19 +144,11 @@ void main(void) {
 
     while (1) {
         // Add your application code
-        int loByte = DIN_0_GetValue() +
-                (DIN_1_GetValue() << 1) +
-                (DIN_2_GetValue() << 2) +
-                (DIN_3_GetValue() << 3);
-        display(loByte, 0);
-        __delay_ms(5);
+        display(0);
+        __delay_us(10);
 
-        int hiByte = DIN_4_GetValue() +
-                (DIN_5_GetValue() << 1) +
-                (DIN_6_GetValue() << 2) +
-                (DIN_7_GetValue() << 3);
-        display(hiByte, 1);
-        __delay_ms(5);
+        display(1);
+        __delay_us(10);
     }
 }
 
