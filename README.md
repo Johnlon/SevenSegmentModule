@@ -31,14 +31,16 @@ Using the pin configurator "Pin Manager" grid shown at the bottom of the IDE in 
 
 Once the config has been decided the hit the _Generate_ button to recreate the config code.
 
-I used the facilities shown below to setup the config. I used the "Pin Module" to uncheck "Analog" on all pins and then renamed the pins to the symbolic names that represents their function. These names show up in the generated code, for example _SEG_A_ for segment 'A'. I also set the two multiplexing pins to start with logic high. This is so that the two digits will be unlit until the microcontroller starts it's program loop.
+I used the facilities shown below to setup the config. I used the "Pin Module" to uncheck "Analog" on all pins and then renamed the pins to the symbolic names that represents their function. These names show up in the generated code, for example _SEG_A_ for segment 'A'. I also set the two multiplexing pins to start with logic high. This is so that the two digits will be unlit until the microcontroller starts it's program loop. I also turned on the pull ups on the inputs so that they were firmly at a well known value when unconnected rather than floating. 
 
 ![Configurator view](pin-config.png)
 
 
-Hardware
+Hardware and Software Components
 ------
 
-To follow.
+PCB: https://oshwlab.com/john.lonergan.sharing/7-segment-display-module-using-pic16f18446-microcontroller
 
-I'll use EasyEDA to setup the PCB and then get them made up by a PCB fab company.
+Git repo : https://github.com/Johnlon/SevenSegmentModule
+
+Hackaday : https://hackaday.io/project/178227-7-segment-module-using-pic16f18446
