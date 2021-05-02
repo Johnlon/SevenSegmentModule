@@ -6,24 +6,25 @@
 
 #include "mcc_generated_files/mcc.h"
 
-void display(int dig) {
-    
-    int value4Bit;
-    if (dig == 0) {
-        value4Bit = DIN_0_GetValue() +
-            (DIN_1_GetValue() << 1) +
-            (DIN_2_GetValue() << 2) +
-            (DIN_3_GetValue() << 3);
-    } else {
-        value4Bit = DIN_4_GetValue() +
-            (DIN_5_GetValue() << 1) +
-            (DIN_6_GetValue() << 2) +
-            (DIN_7_GetValue() << 3);
-    }
+int value() {
+    return 
+            (DIN_0_GetValue() << 3) +
+            (DIN_1_GetValue() << 2) +
+            (DIN_2_GetValue() << 1) +
+            (DIN_3_GetValue() << 0) +
+            (DIN_4_GetValue() << 4) +
+            (DIN_5_GetValue() << 5) +
+            (DIN_6_GetValue() << 6) +
+            (DIN_7_GetValue() << 7);
+   
+}
+
+void display(int dig, int v) {
+
     bool a, b, c, d, e, f, g;
     a = b = c = d = e = f = g = false;
 
-    switch (value4Bit) {
+    switch (v) {
         case 0:
             a = b = c = d = e = f = true;
             break;
@@ -74,9 +75,11 @@ void display(int dig) {
             break;
     }
 
+    // turn off display
     DIGIT_L_SetHigh(); // inactive
     DIGIT_H_SetHigh(); // inactive
    
+ 
     if (a) {
         SEG_A_SetHigh();
     } else {
@@ -143,12 +146,25 @@ void main(void) {
     //INTERRUPT_PeripheralInterruptDisable();
 
     while (1) {
-        // Add your application code
-        display(0);
-        __delay_us(10);
+        
+        int v = 0;
 
-        display(1);
-        __delay_us(10);
+        // wait for value to be stable for a short period to reduce 
+        // risk of reading a bit of randomness during switching
+        bool same = false;
+        do {
+            v = value();
+             __delay_us(100);
+            int second = value();
+            same = (v == second);
+        } while (!same);
+
+        // Add your application code
+        display(0, v & 0x0f);
+        __delay_us(100);
+
+        display(1, v >> 4);
+        __delay_us(100);
     }
 }
 
