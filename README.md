@@ -12,6 +12,8 @@ The device pinout is shown below. I've labelled the pins as DIN_0-7 for the 8 bi
 
 ![Pin out](pinout.png)
 
+https://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf
+
 Project Structure
 ----
 
