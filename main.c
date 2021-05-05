@@ -138,6 +138,15 @@ void display(int dig, int v) {
     }
 }
 
+// make this long enough that the display is mostly on.
+void sleep() {
+    // at 32MHz 30 spins wastes about 900us
+    int i = 30;
+    while (i-->0) {
+        // pass
+    }
+}
+
 /*
                          Main application
  */
@@ -145,23 +154,23 @@ void main(void) {
     // initialize the device
     SYSTEM_Initialize();
 
-    int vLast  = value();
-    
+    int vDisp  = value();
     while (1) {
         
-        int v1 = value();
+        int vSample1 = value();
              
         // Add your application code
-        display(0, vLast & 0x0f);
-        __delay_us(1000);
+        display(0, vDisp & 0x0f);
+        sleep();
         
-        int v2 = value();
+        int vSample2 = value();
 
-        display(1, vLast >> 4);
-        __delay_us(1000);
+        display(1, vDisp >> 4);
+        sleep();
         
-        if (v1 == v2) {
-            vLast = v1;
+        // if samples were the same then input is stable so display it
+        if (vSample1 == vSample2) {
+            vDisp = vSample1;
         }
     }
 }
