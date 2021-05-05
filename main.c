@@ -154,7 +154,6 @@ void sleep() {
 #define UPPER 1
 
 void main(void) {
-    // initialize the device
     SYSTEM_Initialize();
 
     int vDisp  = value();
@@ -163,12 +162,12 @@ void main(void) {
         int vSample1 = value();
 
         // Add your application code
-        display(0, vDisp & 0x0f);
+        display(LOWER, vDisp & 0x0f);
         sleep();
 
         int vSample2 = value();
 
-        display(1, vDisp >> 4);
+        display(UPPER, vDisp >> 4);
         sleep();
         
         // if samples were the same then input is stable so display it
