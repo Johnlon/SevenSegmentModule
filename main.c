@@ -7,11 +7,26 @@
 #include "mcc_generated_files/mcc.h"
 
 int value() {
-    return 
+    // MK11 PCB layout accident
+    bool mk2 = false;
+    
+    if (mk2) 
+        return 
             (DIN_0_GetValue() << 3) +
             (DIN_1_GetValue() << 2) +
             (DIN_2_GetValue() << 1) +
             (DIN_3_GetValue() << 0) +
+            (DIN_4_GetValue() << 4) +
+            (DIN_5_GetValue() << 5) +
+            (DIN_6_GetValue() << 6) +
+            (DIN_7_GetValue() << 7);
+   
+    else
+        return 
+            (DIN_0_GetValue() << 0) +
+            (DIN_1_GetValue() << 1) +
+            (DIN_2_GetValue() << 2) +
+            (DIN_3_GetValue() << 3) +
             (DIN_4_GetValue() << 4) +
             (DIN_5_GetValue() << 5) +
             (DIN_6_GetValue() << 6) +
@@ -130,41 +145,24 @@ void main(void) {
     // initialize the device
     SYSTEM_Initialize();
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
+    int vLast  = value();
+    
     while (1) {
         
-        int v = 0;
-
-        // wait for value to be stable for a short period to reduce 
-        // risk of reading a bit of randomness during switching
-        bool same = false;
-        do {
-            v = value();
-             __delay_us(100);
-            int second = value();
-            same = (v == second);
-        } while (!same);
-
+        int v1 = value();
+             
         // Add your application code
-        display(0, v & 0x0f);
-        __delay_us(100);
+        display(0, vLast & 0x0f);
+        __delay_us(1000);
+        
+        int v2 = value();
 
-        display(1, v >> 4);
-        __delay_us(100);
+        display(1, vLast >> 4);
+        __delay_us(1000);
+        
+        if (v1 == v2) {
+            vLast = v1;
+        }
     }
 }
 
