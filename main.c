@@ -150,6 +150,9 @@ void sleep() {
 /*
                          Main application
  */
+#define LOWER 0
+#define UPPER 1
+
 void main(void) {
     // initialize the device
     SYSTEM_Initialize();
@@ -158,11 +161,11 @@ void main(void) {
     while (1) {
         
         int vSample1 = value();
-             
+
         // Add your application code
         display(0, vDisp & 0x0f);
         sleep();
-        
+
         int vSample2 = value();
 
         display(1, vDisp >> 4);
@@ -171,8 +174,8 @@ void main(void) {
         // if samples were the same then input is stable so display it
         if (vSample1 == vSample2) {
             vDisp = vSample1;
-        }
     }
+}
 }
 
 /**
