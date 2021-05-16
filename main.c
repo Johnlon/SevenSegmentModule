@@ -6,22 +6,17 @@
 
 #include "mcc_generated_files/mcc.h"
 
-int value() {
+int readInput() {
     // MK11 PCB layout accident
     bool mk2 = false;
+
+    // MK1 DM9368 - not pic 
+    // MK2 PIC WITH WINGS BUT WIRING WRONG
+    // MK3 SKINNY 
+// #define BAD_BCB_WIRING
     
-    if (mk2) 
-        return 
-            (DIN_0_GetValue() << 3) +
-            (DIN_1_GetValue() << 2) +
-            (DIN_2_GetValue() << 1) +
-            (DIN_3_GetValue() << 0) +
-            (DIN_4_GetValue() << 4) +
-            (DIN_5_GetValue() << 5) +
-            (DIN_6_GetValue() << 6) +
-            (DIN_7_GetValue() << 7);
-   
-    else
+#ifndef BAD_BCB_WIRING
+    
         return 
             (DIN_0_GetValue() << 0) +
             (DIN_1_GetValue() << 1) +
@@ -31,12 +26,31 @@ int value() {
             (DIN_5_GetValue() << 5) +
             (DIN_6_GetValue() << 6) +
             (DIN_7_GetValue() << 7);
-   
-}
+#else
+        return 
+            (DIN_0_GetValue() << 3) +
+            (DIN_1_GetValue() << 2) +
+            (DIN_2_GetValue() << 1) +
+            (DIN_3_GetValue() << 0) +
+            (DIN_4_GetValue() << 4) +
+            (DIN_5_GetValue() << 5) +
+            (DIN_6_GetValue() << 6) +
+            (DIN_7_GetValue() << 7);
+#endif
+        
+    }
+
 
 void display(int dig, int v) {
 
-    bool a, b, c, d, e, f, g;
+    bool a; 
+    bool b;
+    bool c;
+    bool d;
+    bool e;
+    bool f;
+    bool g;
+    
     a = b = c = d = e = f = g = false;
 
     switch (v) {
@@ -91,57 +105,28 @@ void display(int dig, int v) {
     }
 
     // turn off display
-    DIGIT_L_SetHigh(); // inactive
-    DIGIT_H_SetHigh(); // inactive
-   
- 
-    if (a) {
-        SEG_A_SetHigh();
-    } else {
-        SEG_A_SetLow();
-    }
-    if (b) {
-        SEG_B_SetHigh();
-    } else {
-        SEG_B_SetLow();
-    }
-    if (c) {
-        SEG_C_SetHigh();
-    } else {
-        SEG_C_SetLow();
-    }
-    if (d) {
-        SEG_D_SetHigh();
-    } else {
-        SEG_D_SetLow();
-    }
-    if (e) {
-        SEG_E_SetHigh();
-    } else {
-        SEG_E_SetLow();
-    }
-    if (f) {
-        SEG_F_SetHigh();
-    } else {
-        SEG_F_SetLow();
-    }
-    if (g) {
-        SEG_G_SetHigh();
-    } else {
-        SEG_G_SetLow();
-    }
- 
+    DIGIT_L_LAT = 1; // inactive
+    DIGIT_H_LAT = 1; // inactive
+    
+    SEG_A_LAT = a;
+    SEG_B_LAT = b;
+    SEG_C_LAT = c;
+    SEG_D_LAT = d;
+    SEG_E_LAT = e;
+    SEG_F_LAT = f;
+    SEG_G_LAT = g;
+    
     if (dig == 0) {
-        DIGIT_L_SetLow(); // active
+        DIGIT_L_LAT = 0; // active
     } else {
-        DIGIT_H_SetLow(); // active
+        DIGIT_H_LAT = 0; // active
     }
 }
 
 // make this long enough that the display is mostly on.
 void sleep() {
-    // at 32MHz 30 spins wastes about 900us
-    int i = 30;
+    // at 32MHz 2 spins gives a 70hz refresh
+    int i = 2;
     while (i-->0) {
         // pass
     }
@@ -156,26 +141,21 @@ void sleep() {
 void main(void) {
     SYSTEM_Initialize();
 
-    int vDisp  = value();
     while (1) {
         
-        int vSample1 = value();
+        unsigned int sample = readInput();
 
         // Add your application code
-        display(LOWER, vDisp & 0x0f);
-        sleep();
-
-        int vSample2 = value();
-
-        display(UPPER, vDisp >> 4);
+        display(LOWER, sample & 0x0f);
         sleep();
         
-        // if samples were the same then input is stable so display it
-        if (vSample1 == vSample2) {
-            vDisp = vSample1;
+        readInput();
+
+        display(UPPER, sample >> 4);
+        sleep();
     }
 }
-}
+
 
 /**
  End of File
