@@ -125,7 +125,6 @@ void display(int dig, int v) {
 
 // make this long enough that the display is mostly on.
 void sleep() {
-    // at 32MHz 2 spins gives a 70hz refresh
     int i = 2;
     while (i-->0) {
         // pass
@@ -148,11 +147,14 @@ void main(void) {
         // Add your application code
         display(LOWER, sample & 0x0f);
         sleep();
+        __delay_us(500);
         
         readInput();
 
         display(UPPER, sample >> 4);
         sleep();
+        __delay_us(500);
+    
     }
 }
 

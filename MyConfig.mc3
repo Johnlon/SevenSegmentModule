@@ -1167,7 +1167,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCFRQ" settingAlias="HFFRQ"/>
-         <value>32_MHz</value>
+         <value>4_MHz</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD7" settingAlias="CLC3MD"/>
@@ -1539,7 +1539,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="HFIntOscClockInHz"/>
-         <value>32000000</value>
+         <value>4000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG4" settingAlias="BBSIZE" alias="BB4K"/>
@@ -1551,7 +1551,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="CustomIRFC"/>
-         <value>32_MHz</value>
+         <value>4_MHz</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="T1CKIPPS" settingAlias="T1CKIPPS"/>
@@ -3147,7 +3147,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="CurrentSystemClockInHz"/>
-         <value>32000000</value>
+         <value>4000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA2"/>
@@ -3367,7 +3367,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCFRQ"/>
-         <value>6</value>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCAF" settingAlias="IOCAF5" alias="enabled"/>
@@ -4215,7 +4215,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="FOSCClockValue"/>
-         <value>32000000</value>
+         <value>4000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PMD" registerAlias="PMD3" settingAlias="DAC1MD"/>
@@ -4597,7 +4597,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
-         <hash>a1f07a83039e198943d8e5e375054d694c86700b01433e571e270eedd1099aed</hash>
+         <hash>c7d19a5db0f3904f01b142cc5fe7d540dc9a6b3f5a1247edd6a5a71c42e8d04f</hash>
       </entry>
       <entry>
          <file>main.c</file>
@@ -4613,7 +4613,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>aba228196aefc9954f21ca9c58f9689256209512a6894602fae9f6334aee609d</hash>
+         <hash>1942247c0458a504520536d26f21a5c047763cec6e132755ba7eeb17cd67d401</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
